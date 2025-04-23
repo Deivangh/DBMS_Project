@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Details</title>
+</head>
+<body>
+    <h1>Bill Details</h1>
+    <h3>Bookings</h3>
+    <table>
+        <tr><th>Customer ID</th><th>Room Type</th><th>Check-in</th><th>Check-out</th></tr>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking[0] }}</td>
+            <td>{{ booking[1] }}</td>
+            <td>{{ booking[2] }}</td>
+            <td>{{ booking[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <h3>Bill Details</h3>
+    <table>
+        <tr><th>Customer ID</th><th>Room Rent</th><th>Restaurant Bill</th><th>Gaming Charges</th><th>Total Bill</th></tr>
+        {% for bill in bill_details %}
+        <tr>
+            <td>{{ bill[0] }}</td>
+            <td>{{ bill[1] }}</td>
+            <td>{{ bill[2] }}</td>
+            <td>{{ bill[3] }}</td>
+            <td>{{ bill[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

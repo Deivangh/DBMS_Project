@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Total Bill</title>
+</head>
+<body>
+    <h1>Generate Total Bill</h1>
+    <form method="POST">
+        <label for="cid">Customer ID:</label><br>
+        <input type="text" id="cid" name="cid" required><br><br>
+
+        <label for="room_type">Room Type:</label><br>
+        <input type="text" id="room_type" name="room_type" required><br><br>
+
+        <label for="days_stayed">Days Stayed:</label><br>
+        <input type="number" id="days_stayed" name="days_stayed" required><br><br>
+
+        <label for="restaurant_bill">Restaurant Bill:</label><br>
+        <input type="number" id="restaurant_bill" name="restaurant_bill" step="0.01" required><br><br>
+
+        <label for="gaming_bill">Gaming Charges:</label><br>
+        <input type="number" id="gaming_bill" name="gaming_bill" step="0.01" required><br><br>
+
+        <input type="submit" value="Generate Bill">
+    </form>
+</body>
+</html>
+
